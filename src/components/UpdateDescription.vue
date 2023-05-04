@@ -7,7 +7,6 @@ function onDescriptionChange(e) {
     string = e.value;
 }
 function onClick(e) {
-    //console.log(e);
     items.value[currIndex.num].description = desc_str;
 }
 </script>

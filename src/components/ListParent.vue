@@ -5,7 +5,7 @@ import ListItem from './ListItem.vue'
 
 <template>
     <div className="ListParentFlexBox">
-        <li v-for="item in items.value" :key="[item.id, item.done]">
+        <li v-for="item in items.value" :key="[item.id, item.done, currIndex.num]">
             <ListItem :item="item"/>
         </li>
 

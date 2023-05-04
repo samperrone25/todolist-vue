@@ -3,7 +3,12 @@ import { items, currIndex } from '../state.js'
 import { reactive } from 'vue'
 
 function onClick(e) {
+    if (currIndex.num == (items.value.length-1)) {
+        // if we delete last element
+        currIndex.num -= 1;
+    }
     items.value = items.value.filter((item, i) => i != currIndex.num);
+    
 }
 </script>
 
